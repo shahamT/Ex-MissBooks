@@ -1,14 +1,22 @@
+// react
 
+// services
+
+// childrens
+import { BooksFilter } from "../cmps/BooksFilter.jsx";
+import { BooksList } from "../cmps/BooksList.jsx";
+
+// component
 export function BookIndex() {
 
 
 
 
     return (
-        <React.Fragment>
-            <h1>Book Index</h1>
-
-        </React.Fragment>
+        <section className="books-index main-inline-padding">
+            <BooksFilter/>
+            <BooksList />
+        </section>
     )
 
 }
