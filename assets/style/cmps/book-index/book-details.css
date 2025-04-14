@@ -1,0 +1,10 @@
+.book-details{
+    position: relative;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.book-details .back-btn{
+    position: absolute;
+    inset: auto 0 auto auto;
+}

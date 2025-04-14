@@ -1,0 +1,13 @@
+.books-filter{
+
+    
+    padding-inline: 16px;
+    padding-block: 16px;
+
+    border-radius: 16px;
+    background-color: rgb(114, 119, 116);
+}
+
+.books-filter .filters-form{
+    gap: 16px;
+}

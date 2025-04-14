@@ -17,9 +17,24 @@
 /* Pages */
 
 
-/* Components */
-@import 'cmps/main-header.css';
+/* =============== Components ================ */
+/* main */
+@import 'cmps/main/app.css';
+@import 'cmps/main/root.css';
+
+@import 'cmps/main/main-header.css';
+@import 'cmps/main/main-content.css';
+
 @import 'cmps/main-logo.css';
+@import 'cmps/content-title.css';
+
+/* books-index */
+@import 'cmps/book-index/books-index.css';
+@import 'cmps/book-index/book-card.css';
+@import 'cmps/book-index/books-list.css';
+@import 'cmps/book-index/books-filter.css';
+@import 'cmps/book-index/book-details.css';
+
 
 
 

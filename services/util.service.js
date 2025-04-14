@@ -9,6 +9,7 @@ export const utilService = {
     elapsedTime,
     updateQueryParams,
     makeLorem,
+    getRandomInRange,
 }
 
 function saveToStorage(key, value) {
@@ -78,4 +79,14 @@ function updateQueryParams(queryParamsObj) {
     queryParams = queryParams.substring(0, queryParams.length-1)
     const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + queryParams
     window.history.pushState({ path: newUrl }, '', newUrl)
+}
+
+function makeLorem(size = 100) {
+    var words = ['The sky', 'above', 'the port', 'was', 'the color of television', 'tuned', 'to', 'a dead channel', '.', 'All', 'this happened', 'more or less', '.', 'I', 'had', 'the story', 'bit by bit', 'from various people', 'and', 'as generally', 'happens', 'in such cases', 'each time', 'it', 'was', 'a different story', '.', 'It', 'was', 'a pleasure', 'to', 'burn']
+    var txt = ''
+    while (size > 0) {
+        size--
+        txt += words[Math.floor(Math.random() * words.length)] + ' '
+    }
+    return txt
 }

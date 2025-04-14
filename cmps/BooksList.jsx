@@ -1,13 +1,26 @@
 
+// childrens
+import { BookCard } from "./BookCard.jsx"
+
 // component
-export function BooksList(){
+export function BooksList({ books, setSelectedBook }) {
+
+
+
+
+
+    if (!books) return (
+        <p>loading...</p>
+    )
 
     return (
-        <section className="books-list">
-            <p>book1</p>
-            <p>book2</p>
-            <p>book3</p>
-            <p>book4</p>
+        <section className="books-list grid">
+            {books.map(book=> {
+                return  <BookCard key={book.id} book={book} setSelectedBook={setSelectedBook}/>
+            })}
+            
+           
+
         </section>
     )
 }
